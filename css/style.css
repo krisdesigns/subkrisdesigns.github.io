@@ -1,0 +1,199 @@
+body{
+	background-color:ffffff;
+	padding: 0;
+	margin: 0;
+	font-style: Arial, Helvetica; 
+	font-size: 18px;
+}
+
+/*Global contents*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.button-1{
+	border: none;
+	color: #00a8ff;
+	background-color: yellow;
+	height: 38px;
+	width: 100px;
+	border-radius: 25px;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+/*HEADER*/
+
+header{
+	background-color: #00a8ff;
+	color: #ffffff;
+	padding-top:10px;
+	border-bottom: yellow 3px solid;
+	min-height: 70px;
+}
+ 
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px;
+}
+header a{
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header a:hover{
+	color: yellow;
+	font-weight: bold;
+}
+
+header .main{
+	float: left;
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+header .main h1 {
+	margin: 0;
+}
+
+/*Home*/
+.home{
+	min-height: 400px;
+	background: url(../css/sublim.png) 0;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	color: black;
+	background-attachment: fixed;
+}
+.home h1{
+	margin-top: 100px;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+.home p{
+	font-size: 20px;
+	font-weight: 40px;
+}
+/*NEWSLETTER*/
+
+.news{
+	background-color: #00a8ff;
+	color: #ffffff;
+	padding: 15px;
+}
+.news h1{
+	float: left;
+}
+.news form{
+	float: right;
+	margin-top: 15px;
+}
+.news input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+/*SPECIALITY*/
+.specialty{
+	margin-top: 20px;
+}
+.specialty .special{
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+.specialty .special img{
+	width:90px;
+	height: auto;
+}
+
+/*ABOUT US*/
+.main{
+	display: inline-block;
+}
+#sidebar {
+	float:right;
+	width:30%;
+	margin-top:10px;
+	text-align:center;
+}
+
+#sidebar .quote input,
+#sidebar .quote textarea{
+	width: 90%;
+	padding: 5px;
+}
+
+.main-article{
+	float: left;
+	width: 60%;
+}
+.back{
+	background-color: #5a5a5a;
+	color: #ffffff;
+	padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*SERVICES*/
+ul.service li{
+	padding: 20px;
+	list-style: none;
+	margin-top: 10px;
+	background-color: #e6e6e6;
+	border: solid 1px #cccccc;
+	margin-bottom: 5px;
+}
+/*FOOTER*/
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: yellow;
+}
+
+/*MEDIA QUERIES*/
+@media(max-width: 768px){
+	header .main,
+	header nav,
+	header nav li,
+	.news h1,
+	.news form,
+	.specialty .special,
+	.main .main-article,
+	aside#sidebar{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header nav li{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	header{
+		padding-bottom: 20px;
+	}
+	.home h1{
+		margin-top: 20px;
+		font-size: 40px;
+	}
+	.news button,
+	.quote button{
+		display: block;
+		width: 100%;
+	}
+	.news form input[type="email"]{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
